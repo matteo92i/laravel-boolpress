@@ -13,6 +13,22 @@ class newsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $news = [
+            [
+                "title" => "esports mercato",
+                "autore" => "matteo iovane",
+                "notizia_content" => "rekkles va via"
+            ],
+            [
+                "title" => "esports mercato",
+                "autore" => "matteo iovane",
+                "notizia_content" => "rekkles va via"
+            ],
+            [
+                "title" => "esports mercato",
+                "autore" => "matteo iovane",
+                "notizia_content" => "rekkles va via"
+            ],
+        ];
     }
 }
