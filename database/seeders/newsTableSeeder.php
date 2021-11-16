@@ -30,5 +30,16 @@ class newsTableSeeder extends Seeder
                 "notizia_content" => "rekkles va via"
             ],
         ];
+        foreach ($news as $notizia){
+            $newNotizia = new Notizia();
+            $newNotizia ->title = $notizia ['title'];
+            $newNotizia ->autore = $notizia ['autore'];
+            $newNotizia ->notizia_content = $notizia ['notizia_content'];
+            
+            $newNotizia ->slug =Str::slug($notizia ['title'], "-") ;
+            $newNotizia ->save();
+
+
+        };
     }
 }
