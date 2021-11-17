@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Notizia;
 
 class newsTableSeeder extends Seeder
 {
@@ -36,7 +37,7 @@ class newsTableSeeder extends Seeder
             $newNotizia ->autore = $notizia ['autore'];
             $newNotizia ->notizia_content = $notizia ['notizia_content'];
             
-            $newNotizia ->slug =Str::slug($notizia ['title'], "-") ;
+            // $newNotizia ->slug =Str::slug($notizia ['title'], "-") ;
             $newNotizia ->save();
 
 
